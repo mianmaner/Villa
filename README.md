@@ -5,7 +5,7 @@
 
 ### Datasets
 
-Please download the large-scale datasets of Loghub-2.0 via [Zenodo](https://zenodo.org/record/8275861) and unzip these datasets into the directory of `dataset`.
+Please download the large-scale datasets of Loghub-2.0 via [Zenodo](https://zenodo.org/record/8275861) and unzip these datasets into the directory of `dataset/full_dataset`.
 
 ###  Installation
 
