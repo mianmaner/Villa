@@ -11,7 +11,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_type', type=str, default='full')
     parser.add_argument('--shot', type=int, default=32)
-    parser.add_argument('--model', type=str, default="qwen-plus")
+    parser.add_argument('--model', type=str, default="gpt-3.5-turbo")
     args = parser.parse_args()
     return args
 
