@@ -40,7 +40,7 @@ class Sampler:
         st_time = time.time()
 
         # Deduplicate logs by uncommon tokens
-        grouped_df = self.deduplicating(self.log_df)
+        grouped_df = self.grouping(self.log_df)
 
         # Cluster uncommon tokens
         uncommon_tokens_list = grouped_df['UncommonTokens'].tolist()
@@ -72,7 +72,7 @@ class Sampler:
             uncommon_tokens_list.append(list(set(uncommon_tokens)))
         return uncommon_tokens_list
 
-    def deduplicating(self, log_df):
+    def grouping(self, log_df):
         # Mask content and group
         log_df['MaskContent'] = log_df['Content'].map(mask_message)
         unique_df = log_df.drop_duplicates(subset='MaskContent')
